@@ -1,0 +1,14 @@
+{
+  "name": "movieareas-api",
+  "version": "1.0.0",
+  "description": "\"Node-Js Create API from Scratch\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dineshdevelope",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
