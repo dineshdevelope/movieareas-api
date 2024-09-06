@@ -2,7 +2,10 @@ export const readData = (req, res) => {
   res.send("Get The Movie");
 };
 export const createData = (req, res) => {
-  res.send("Create Movie");
+  //Create the Movie
+  //id,tittle,desc
+  console.log(req.body);
+  return res.json(req.body);
 };
 export const updateData = (req, res) => {
   res.send("Update Movie");
