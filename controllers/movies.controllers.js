@@ -59,21 +59,15 @@ export const updateData = async (req, res) => {
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
-  /* if (req.body.title != null) {
-    res.movie.title = req.body.title;
-  }
-  if (req.body.desc != null) {
-    res.movie.desc = req.body.desc;
-  }
-
-  try {
-    const updateData = await res.movie.save();
-    res.json(updateData);
-  } catch (error) {
-    res.status(400).json({ message: error.message });
-  } */
 };
 
-export const deleteData = (req, res) => {
-  res.send("Delete Movie");
+export const deleteData = async (req, res) => {
+  const dataId = req.params.id;
+
+  try {
+    await Movie.deleteOne({ _id: dataId });
+    res.json({ message: "Data Deleted" });
+  } catch (error) {
+    res.status(200).json({ message: error.message });
+  }
 };
