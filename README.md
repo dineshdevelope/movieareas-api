@@ -11,8 +11,3 @@ or `git push`
 
 1.SQL - (MySQL,Maria DB,PostgreSQL)
 2.NoSQL - (MongoDB)
-
-dineshinmecheng
-d46CflD7aqIMpSeB
-
-mongodb+srv://dineshinmecheng:d46CflD7aqIMpSeB@cluster0.uumkn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
